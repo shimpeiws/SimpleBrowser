@@ -21,7 +21,7 @@
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D5i-Y8-uz4">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <searchBar contentMode="redraw" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xhA-cv-XOx">
+                                    <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xhA-cv-XOx">
                                         <rect key="frame" x="0.0" y="21" width="600" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="yXu-Rt-1i4"/>
@@ -40,17 +40,25 @@
                                             <barButtonItem title="Item" id="JXu-rI-Uk2"/>
                                         </items>
                                     </toolbar>
+                                    <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pXT-Yn-H4S">
+                                        <rect key="frame" x="8" y="94" width="240" height="128"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                    </webView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="xhA-cv-XOx" secondAttribute="bottom" id="9gP-sB-GNq"/>
                                     <constraint firstAttribute="bottom" secondItem="cFO-QX-E7X" secondAttribute="bottom" id="MOH-kr-hQN"/>
+                                    <constraint firstAttribute="trailing" secondItem="pXT-Yn-H4S" secondAttribute="trailing" id="Nkx-LE-ToP"/>
                                     <constraint firstItem="xhA-cv-XOx" firstAttribute="leading" secondItem="D5i-Y8-uz4" secondAttribute="leading" id="QvM-hY-RGA"/>
+                                    <constraint firstItem="pXT-Yn-H4S" firstAttribute="top" secondItem="xhA-cv-XOx" secondAttribute="bottom" id="YYP-HX-UKF"/>
+                                    <constraint firstItem="pXT-Yn-H4S" firstAttribute="leading" secondItem="D5i-Y8-uz4" secondAttribute="leading" id="c5N-qh-1hK"/>
                                     <constraint firstItem="cFO-QX-E7X" firstAttribute="trailing" secondItem="xhA-cv-XOx" secondAttribute="trailing" id="i6U-CK-BVh"/>
                                     <constraint firstItem="cFO-QX-E7X" firstAttribute="leading" secondItem="xhA-cv-XOx" secondAttribute="leading" id="j6c-nS-9yT"/>
                                     <constraint firstAttribute="height" constant="64" id="mBB-sk-25r"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="oV1-Ph-fVw"/>
                                     <constraint firstAttribute="trailing" secondItem="xhA-cv-XOx" secondAttribute="trailing" id="up1-ci-HGi"/>
+                                    <constraint firstItem="cFO-QX-E7X" firstAttribute="top" secondItem="pXT-Yn-H4S" secondAttribute="bottom" id="zu7-1F-bb1"/>
                                 </constraints>
                             </view>
                         </subviews>
