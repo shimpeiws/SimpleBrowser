@@ -34,10 +34,22 @@
                                             <constraint firstAttribute="height" constant="44" id="SzM-IA-NP2"/>
                                         </constraints>
                                         <items>
-                                            <barButtonItem title="Item" id="v4j-zg-KuN"/>
+                                            <barButtonItem title="Item" id="v4j-zg-KuN">
+                                                <connections>
+                                                    <action selector="backButtonTapped:" destination="BYZ-38-t0r" id="F0y-P4-pz6"/>
+                                                </connections>
+                                            </barButtonItem>
                                             <barButtonItem style="plain" systemItem="flexibleSpace" id="4dc-Tr-hKj"/>
-                                            <barButtonItem title="Item" id="ryg-Kl-nfW"/>
-                                            <barButtonItem title="Item" id="JXu-rI-Uk2"/>
+                                            <barButtonItem title="Item" id="ryg-Kl-nfW">
+                                                <connections>
+                                                    <action selector="reloadButtonTapped:" destination="BYZ-38-t0r" id="UkL-AB-Mz5"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem title="Item" id="JXu-rI-Uk2">
+                                                <connections>
+                                                    <action selector="stopButtonTapped:" destination="BYZ-38-t0r" id="ljN-Qg-HyW"/>
+                                                </connections>
+                                            </barButtonItem>
                                         </items>
                                     </toolbar>
                                     <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pXT-Yn-H4S">
@@ -69,6 +81,13 @@
                             <constraint firstItem="D5i-Y8-uz4" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="nbk-fP-FlB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backButton" destination="v4j-zg-KuN" id="pNw-54-3PC"/>
+                        <outlet property="reloadButton" destination="ryg-Kl-nfW" id="tlS-Ho-YeQ"/>
+                        <outlet property="searchBar" destination="xhA-cv-XOx" id="2Zf-h2-vdr"/>
+                        <outlet property="stopButton" destination="JXu-rI-Uk2" id="7Nn-Cf-39G"/>
+                        <outlet property="webView" destination="pXT-Yn-H4S" id="ZW5-Cg-zyf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
