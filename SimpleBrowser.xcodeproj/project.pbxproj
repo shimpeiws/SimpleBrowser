@@ -14,6 +14,7 @@
 		8C657ED21CD4876500882DA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C657ED01CD4876500882DA2 /* LaunchScreen.storyboard */; };
 		8C657EDD1CD4876500882DA2 /* SimpleBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C657EDC1CD4876500882DA2 /* SimpleBrowserTests.swift */; };
 		8C657EE81CD4876500882DA2 /* SimpleBrowserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C657EE71CD4876500882DA2 /* SimpleBrowserUITests.swift */; };
+		8C9DFCBD1CD6370A00B4165F /* button-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C9DFCBC1CD6370A00B4165F /* button-back.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		8C657EE31CD4876500882DA2 /* SimpleBrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleBrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C657EE71CD4876500882DA2 /* SimpleBrowserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBrowserUITests.swift; sourceTree = "<group>"; };
 		8C657EE91CD4876500882DA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C9DFCBC1CD6370A00B4165F /* button-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-back.png"; path = "Resources/button-back.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		8C657EC61CD4876500882DA2 /* SimpleBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				8C9DFCBB1CD636E100B4165F /* Resources */,
 				8C657EC71CD4876500882DA2 /* AppDelegate.swift */,
 				8C657EC91CD4876500882DA2 /* ViewController.swift */,
 				8C657ECB1CD4876500882DA2 /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				8C657EE91CD4876500882DA2 /* Info.plist */,
 			);
 			path = SimpleBrowserUITests;
+			sourceTree = "<group>";
+		};
+		8C9DFCBB1CD636E100B4165F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8C9DFCBC1CD6370A00B4165F /* button-back.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C9DFCBD1CD6370A00B4165F /* button-back.png in Resources */,
 				8C657ED21CD4876500882DA2 /* LaunchScreen.storyboard in Resources */,
 				8C657ECF1CD4876500882DA2 /* Assets.xcassets in Resources */,
 				8C657ECD1CD4876500882DA2 /* Main.storyboard in Resources */,
@@ -484,6 +496,7 @@
 				8C657EEE1CD4876500882DA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C657EEF1CD4876500882DA2 /* Build configuration list for PBXNativeTarget "SimpleBrowserTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +505,7 @@
 				8C657EF11CD4876500882DA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C657EF21CD4876500882DA2 /* Build configuration list for PBXNativeTarget "SimpleBrowserUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +514,7 @@
 				8C657EF41CD4876500882DA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -40,12 +40,12 @@
                                                 </connections>
                                             </barButtonItem>
                                             <barButtonItem style="plain" systemItem="flexibleSpace" id="4dc-Tr-hKj"/>
-                                            <barButtonItem title="Item" id="ryg-Kl-nfW">
+                                            <barButtonItem systemItem="refresh" id="ryg-Kl-nfW">
                                                 <connections>
                                                     <action selector="reloadButtonTapped:" destination="BYZ-38-t0r" id="UkL-AB-Mz5"/>
                                                 </connections>
                                             </barButtonItem>
-                                            <barButtonItem title="Item" id="JXu-rI-Uk2">
+                                            <barButtonItem systemItem="stop" id="JXu-rI-Uk2">
                                                 <connections>
                                                     <action selector="stopButtonTapped:" destination="BYZ-38-t0r" id="ljN-Qg-HyW"/>
                                                 </connections>

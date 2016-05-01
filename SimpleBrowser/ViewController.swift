@@ -37,10 +37,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func reloadButtonTapped(sender: UIBarButtonItem) {
+        webView.reload()
     }
     
     
     @IBAction func stopButtonTapped(sender: UIBarButtonItem) {
+        webView.stopLoading()
     }
 
 }
