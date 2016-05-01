@@ -40,6 +40,19 @@
                                                 </connections>
                                             </barButtonItem>
                                             <barButtonItem style="plain" systemItem="flexibleSpace" id="4dc-Tr-hKj"/>
+                                            <barButtonItem style="plain" id="KIf-Ty-Ezr">
+                                                <view key="customView" contentMode="scaleToFill" id="14T-3M-FAo">
+                                                    <rect key="frame" x="283" y="6" width="33" height="33"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <activityIndicatorView opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="xHZ-OH-Qp6">
+                                                            <rect key="frame" x="6" y="7" width="20" height="20"/>
+                                                        </activityIndicatorView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="6rv-6B-zLk"/>
                                             <barButtonItem systemItem="refresh" id="ryg-Kl-nfW">
                                                 <connections>
                                                     <action selector="reloadButtonTapped:" destination="BYZ-38-t0r" id="UkL-AB-Mz5"/>
@@ -55,6 +68,9 @@
                                     <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pXT-Yn-H4S">
                                         <rect key="frame" x="8" y="94" width="240" height="128"/>
                                         <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="hKq-8b-GEX"/>
+                                        </connections>
                                     </webView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -93,6 +109,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="xHZ-OH-Qp6" id="eO0-ls-P3K"/>
                         <outlet property="backButton" destination="v4j-zg-KuN" id="pNw-54-3PC"/>
                         <outlet property="reloadButton" destination="ryg-Kl-nfW" id="tlS-Ho-YeQ"/>
                         <outlet property="searchBar" destination="xhA-cv-XOx" id="2Zf-h2-vdr"/>
