@@ -27,6 +27,9 @@
                                             <constraint firstAttribute="height" constant="44" id="yXu-Rt-1i4"/>
                                         </constraints>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="7rY-lX-3ws"/>
+                                        </connections>
                                     </searchBar>
                                     <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cFO-QX-E7X">
                                         <rect key="frame" x="0.0" y="556" width="600" height="44"/>

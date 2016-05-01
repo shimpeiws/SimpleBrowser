@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIWebViewDelegate {
+class ViewController: UIViewController, UIWebViewDelegate, UISearchBarDelegate {
     @IBOutlet weak var webView: UIWebView!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var backButton: UIBarButtonItem!
@@ -17,6 +17,8 @@ class ViewController: UIViewController, UIWebViewDelegate {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
     let homeUrl = "https://www.google.co.jp"
+    
+    let searchUrl = "https://www.google.co.jp/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q="
     
     let whiteList = [
         "https?://*\\.google\\.co\\.jp",
@@ -95,6 +97,16 @@ class ViewController: UIViewController, UIWebViewDelegate {
         
         return true
     }
+    
+    // MARK: - UISearchBarDelegate
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        if let searchText = searchBar.text {
+            let url = searchUrl + searchText.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!
+            openUrl(url)
+            searchBar.resignFirstResponder()
+        }
+    }
+    
     
     // MARK: - IBAction
     @IBAction func backButtonTapped(sender: UIBarButtonItem) {
